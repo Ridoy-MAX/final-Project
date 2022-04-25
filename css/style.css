@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul,ol {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 0.8;
+    margin: 0;
+}
+p {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #222;
+    font-weight: 600;
+    padding-bottom: 30px; 
+    text-transform: capitalize; 
+}
+
+/*============================ header ==============================*/
+
+/*============================ banner ==============================*/
+
+#banner {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+#banner::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.7);
+}
+.banner-text {
+    height: 100vh;
+    position: relative;
+    z-index: 9999;
+}
+.banner-content {
+    position: relative;
+}
+.banner-content h3 {
+    font-size: 24px;
+    color: #ffc200;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px; 
+    text-transform: capitalize;
+}
+.banner-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    color: #ffc200;
+    font-weight: 700;
+    padding-bottom: 40px; 
+    text-transform: capitalize;
+}
+.banner-content p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400; 
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    padding-bottom: 55px;
+}
+.banner-content a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600; 
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    background-color: #ffc200;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+/*============================ Navbar ==============================*/ 
+
+nav {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+}
+.logo {
+    width: 250px;
+}
+.logo img {
+    width: 200px;
+}
+.menu {
+    width: 850px;
+    text-align: right;
+}
+.navbar {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.menu ul li {
+    display: inline-block;
+    padding-left: 35px;
+    padding-top: 20px;
+}
+.menu ul li a {
+    line-height: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    position: relative;
+}
+.menu ul li a::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #ffc200;
+    bottom: -12px;
+    left: 0;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+.menu ul li i {
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+.menu ul li a:hover {
+    color: #ffc200;
+}
+.menu ul li a:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+.menu ul li i:hover {
+    padding-left: 130px;
+    border: 2px solid #ffc200;
+    color: #ffc200;
+}
+
+
+/*============================ call-us ==============================*/ 
+
+.call-main {
+    width: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    position: relative;
+    bottom: 65px;
+    box-shadow:
+    0 2.8px 2.2px rgba(136, 136, 136, 0.034),
+    0 6.7px 5.3px rgba(131, 131, 131, 0.048),
+    0 12.5px 10px rgba(124, 124, 124, 0.06),
+    0 22.3px 17.9px rgba(112, 112, 112, 0.072),
+    0 41.8px 33.4px rgba(121, 120, 120, 0.086),
+    0 100px 80px rgba(122, 122, 122, 0.12)
+}
+.call-item i {
+    font-size: 60px;
+    color: #ffc200;
+    padding-left: 50px;
+}
+.call-text {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.call-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #555;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.call-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #222;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+/*============================ aboutus ==============================*/
+
+
+#about {
+    padding-top: 40px;
+    padding-bottom: 160px;
+}
+.about {
+    position: relative;
+    width: 500px;
+    height: 540px;
+    background-color: rgb(224, 224, 224);
+}
+.about img {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+}
+.about-text {
+    padding-top: 40px;
+}
+.about-text h2 {
+    position: relative;
+}
+.about-text h2::after {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ffc200;
+    bottom: 2px;
+    left: 0;
+}
+.about-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #555;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.about-text a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 20px 30px;
+    background-color: #ffc200;
+    border-radius: 5px;
+}
+
+/*============================ chef ==============================*/
+
+#chefs {
+    padding-bottom: 80px;
+    background-color: #333;
+}
+#chefs h2 {
+    color: #ffc200;
+    position: relative;
+}
+.chef-item {
+    position: relative;
+    padding-top: 45px;
+}
+.chef-name {
+    position: absolute;
+    padding: 20px 30px;
+    background-color: #ffc200;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: 75px;
+    right: 30px;
+}
+.chef-name h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+}
+.chef-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-right: 80px;
+}
+.chef-links i {
+    font-size: 16px;
+    color: #ffc200;
+    padding-right: 10px;
+}
+
+
+/*============================ services ==============================*/
+
+#services {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.service-heading h2 {
+    font-size: 38px;
+    color: #555;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    position: relative;
+}
+.service-heading h2::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ffc200;
+    top: -27px;
+    left: 48%;
+}
+.icon {
+    transition: all linear .3s;
+}
+.icon i {
+    font-size: 60px;
+    color: #ffc200;
+    transition: all linear .2s;
+    cursor: pointer;
+}
+.service-item {
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 7px;
+    box-shadow:
+    0 2.8px 2.2px rgba(136, 136, 136, 0.034),
+    0 6.7px 5.3px rgba(131, 131, 131, 0.048),
+    0 12.5px 10px rgba(124, 124, 124, 0.06),
+    0 22.3px 17.9px rgba(112, 112, 112, 0.072),
+    0 41.8px 33.4px rgba(121, 120, 120, 0.086),
+    0 100px 80px rgba(122, 122, 122, 0.12)
+}
+.service-text {
+    padding-top: 10px;
+}
+.service-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #222;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+.service-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #555;
+    font-weight: 400;
+    line-height: 24px;
+}
+.icon:hover {
+    transform: scale(1.3);
+}
+.icon i:hover {
+    color: #ffc200;
+}
+
+
+/*============================ Menu ==============================*/
+
+#menu {
+    padding-bottom: 100px;
+}
+.nav-link {
+    padding-left: 0;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+.feed-text {
+    padding: 25px 40px;
+    background-color: #fff;
+    border-top: none;
+    border: 2px solid #f2f2f2;
+}
+.feeds-item {
+    position: relative;
+    margin-left: 12px; 
+    margin-right: 12px;
+    padding-top: 60px;
+}
+.post-date {
+    position: absolute;
+    width: 75px;
+    height: 70px;
+    top: 60px;
+    right: -0.5px;
+    padding: 25px 18px;
+    background-color: #f35900;
+    border-bottom-left-radius: 30px;
+}
+.feed-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    text-transform: capitalize;
+    line-height: 27px;
+}
+.feed-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    line-height: 27px;
+    padding-bottom: 15px;
+}
+.post-date h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+.menu-rating i {
+    color: #ffc200;
+}
+
+
+.project-category {
+    padding-top: 40px;
+}
+.project-category button {
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    padding: 10px 17px;
+    background-color: #fff;
+    margin: 0 5px;
+    text-transform: capitalize;
+    transition: all linear .3s;
+}
+.project-category button:hover {
+    background-color: #ffc200;
+    color: #fff;
+}
+
+/*============================ feedback ==============================*/
+
+#feedback {
+    background: url(../images/offerbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    padding-top: 30px;
+    position: relative;
+}
+#feedback::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.8);
+}
+.feed-heading {
+    padding-top: 80px;
+}
+.feed-heading h2 {
+    font-size: 38px;
+    color: #ffc200;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 999;
+}
+.feed-heading h2::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ffc200;
+    top: -27px;
+    left: 48%;
+}
+.feed-icon {
+    padding-top: 30px;
+    font-size: 58px;
+    color: #ffc200;
+    position: relative;
+    z-index: 9999;
+}
+.reviews {
+    position: relative;
+    padding: 30px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    z-index: 9999;
+    margin-top: 75px;
+}
+.reviews h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+.reviews p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    line-height: 24px;
+}
+.customer {
+    position: absolute;
+    top: -55px;
+    left: 53%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #ffc200;
+    border-radius: 50%;
+}
+.customer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.cstmr-rating {
+    color: #f35900;
+    padding-top: 15px;
+    margin-left: 230px;
+}
+
+
+/*============================ booking ==============================*/
+
+
+.booking {
+    padding: 80px;
+    background-color: #fff;
+    position: relative;
+    bottom: 170px;
+    box-shadow:
+    0 2.8px 2.2px rgba(136, 136, 136, 0.034),
+    0 6.7px 5.3px rgba(131, 131, 131, 0.048),
+    0 12.5px 10px rgba(124, 124, 124, 0.06),
+    0 22.3px 17.9px rgba(112, 112, 112, 0.072),
+    0 41.8px 33.4px rgba(121, 120, 120, 0.086),
+    0 100px 80px rgba(122, 122, 122, 0.12)
+}
+.book-heading h2 {
+    font-size: 38px;
+    color: #222;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 999;
+}
+.book-heading h2::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ffc200;
+    top: -27px;
+    left: 48%;
+}
+.book-heading p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    line-height: 24px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.date-button {
+    padding: 10px 15px;
+    background-color: #ffc200;
+    border: none;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+.date-button i {
+    color: #fff;
+}
+.form-contact {
+    padding-top: 30px;
+}
+.form-btn {
+    padding-top: 30px;
+}
+.form-addrs {
+    padding-top: 30px;
+}
